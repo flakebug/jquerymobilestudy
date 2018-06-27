@@ -4,31 +4,53 @@
 		<link rel="stylesheet" href="./script/jquerymobile/jquery.mobile-1.4.5.min.css" />
 		<script src="./script/jquerymobile/jquery-1.11.1.min.js"></script>
 		<script src="./script/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
-
+		<link rel="apple-touch-icon" href="./resource/icon/main.png">
+		<link rel="apple-touch-startup-image" href="./resource/icon/main.png">
+		<meta name="apple-mobile-web-app-title" content="">
+		<link rel="shortcut icon" href="./resource/icon/main.png">
 	</head>
 	
 	<body>
 		<div data-role="page">
 			
 			<div data-role="header">
+				<a data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
 				<h1>
-				Header
+					Oman Namaste
 				</h1>
+				<a href="#page_about" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info">About</a>
 			</div>
 			<div role="content">
-				<a class="ui-btn" href="./instrument_location_drawing/index.html">Instrument Location Drawing</a>
-				<ul>
-				
+				<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search ...">
+					<li><a href="./document_package/instrument_location/index.html" data-ajax="true"><h4>Instrument Location</h4></a></li>
 				</ul>
 			</div>
 			<div data-role="footer">
-				<h1>
-				Footer
-				</h1>
+
 			</div>			
 		</div>
 
+		<div data-role="page" id="page_about">
+			<div data-role="header">
+				<a data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
+				<h1>
+					About
+				</h1>
+			</div>
+			<div role="content">
+				<h3>Oman Namaste</h3>
+				<p>Author : Liang</p>
+				<p>Initial Release : 2018/Jun/28</p>
+				<p>Description : Oman Namaste Project</p>
+				<p>Welcome to Taiwan</p>
+				<h3>Version History</h3>
+				<h4>0.1 - 2018/Jun/28</h4>
+				<p>Initial release</p>
+			</div>
+			<div data-role="footer">
 
+			</div>				
+		</div>
 
 		
 	</body>
